@@ -1,0 +1,16 @@
+Lógica del juego:
+Tenemos un tablero de 16 x 16.
+Solo se puede avanzar en línea recta.
+El tablero está dividido en 4 cuadrantes, cada uno de 64 casillas, correspondientes a cada uno de los jugadores.
+Cada una de las casillas que hacen esquina corresponden a un "castillo" de cada uno de los jugadores. Para conquistar el cuadrante de un jugador tenemos que conquistar su "castillo", y ese jugador será eliminado de la partida.
+En cada turno tienes dos jugadas una para avanzar una casilla a la hora de la conquista, y otra para poner una barrera defensora en cualquien parte de tu cuadrante.
+CONQUISTA: 
+Si avanzas a una casilla estandar se te hace una pregunta, si la aciertas, la casilla pasa a ser de tu color y avanzas a esa posición, si fallas, retrocedes a la posición en la que te encontrabas antes.
+Si caes en una casilla con barrera deberás contestar a tres preguntas de forma correcta dos para romper la barrera y otra para conquistar la casilla.
+En el caso de acertar las tres la casilla pasa a ser de tu color, en el caso de solo romper la barrera esta desaparece y tu ficha pasa a la casilla anterior, en el caso de fallar las tres la barrera se queda intacta y retrocedes a tu casilla anterior.
+Si llegas al "castillo" de otro jugador y lo atacas tendrás que contestar a 5 preguntas para conquistar. Si aciertas las 5 preguntas conquistas todo el terreno que tenía conquistado el jugador cuyo castillo has derribado, al igual que sus fichas, por tanto, aumentas el número de jugadas en tu turno.
+
+DEFENSA:
+En cada turno de juego está permitido poner un muro en tu cuadrante para defender, dicho muro le dificulta al atacante pasar por esa casilla y conquistarla ya que en lugar de una pregunta tendría que contestar a tres.
+
+Se gana la partida cuando conquistas todo el tablero.
