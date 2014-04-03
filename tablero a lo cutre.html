@@ -24,8 +24,21 @@
                 var j=1;
                 for (j=1;j<=16;j++)
                 {
-                    if
+                    if (i<=8 && j <=8)                    
                         context.fillStyle = "#79BEDB";         
+                                            
+                    else if (i<=8 && j>=8)
+                    
+                        context.fillStyle = "#99CC99";
+                    
+                    else if (i>=8 && j<=8)
+                    
+                        context.fillStyle = "#FFFF66";
+                        
+                    else
+                    
+                        context.fillStyle = "#FF3333";
+                  
                     
 		    	    context.fillRect(20+i*32, +j*32, 32, 32);
                     context.drawImage(imagen,20+i*32, +j*32);
