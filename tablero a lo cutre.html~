@@ -24,7 +24,7 @@
                 var j=1;
                 for (j=1;j<=16;j++)
                 {
-                    if
+
                         context.fillStyle = "#79BEDB";         
                     
 		    	    context.fillRect(20+i*32, +j*32, 32, 32);
