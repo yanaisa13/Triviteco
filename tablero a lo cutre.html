@@ -16,7 +16,9 @@
             context.font = "25px serif"; 
             context.fillText(text, 20, 50);
             context.font = "15px serif";            
-            
+            var imagen = new Image();
+	    imagen.src = '/home/charly/ISI/Triviteco/images/suelo32.png';
+
             for (i=1;i<=16;i++)
             {
                 color = !color;
@@ -37,7 +39,9 @@
                         context.fillStyle = "rgb(0, 0, 0)";
                         color = true;
                     }
-                    context.fillRect(20+i*32, +j*32, 32, 32);
+		    	
+                    context.drawImage(imagen,20+i*32, +j*32);
+	         
                 } 
             } 
         </script>
