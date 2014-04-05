@@ -14,7 +14,15 @@
          
             var imagen = new Image();
 	        imagen.src = '/home/charly/ISI/Triviteco/images/suelo40.png';
-
+            var jugadorRojo = new Image();
+		jugadorRojo.src = '/home/charly/ISI/Triviteco/images/personajerojo40.png';		
+	    var jugadorAmarillo = new Image();
+		jugadorAmarillo.src = '/home/charly/ISI/Triviteco/images/personajeamarillo40.png';
+	    var jugadorVerde = new Image();
+		jugadorVerde.src = '/home/charly/ISI/Triviteco/images/personajeverde40.png';	
+	    var jugadorAzul = new Image();
+		jugadorAzul.src = '/home/charly/ISI/Triviteco/images/personajeazul40.png';	
+	
             for (i=1;i<=16;i++)
             {
                 
@@ -35,13 +43,17 @@
                     else
                     
                         context.fillStyle = "#FF3333";
-                    context.strokeStyle= "white";
+                    //context.strokeStyle= "white";
                     context.strokeRect(i*40, +j*40, 40, 40);
 		    	    context.fillRect(i*40, +j*40, 40, 40);
-                    context.drawImage(imagen,i*40, +j*40);
+                    //context.drawImage(imagen,i*40, +j*40);
 	         
                 } 
             } 
+	context.drawImage(jugadorRojo,360,360);
+	context.drawImage(jugadorAmarillo,360,320);
+	context.drawImage(jugadorVerde,320,360);
+	context.drawImage(jugadorAzul,320,320);
         </script>
     </body>
 </html>
