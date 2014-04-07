@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Ejemplo de Canvas</title>
+    </head>
+    <body>
+        <canvas id="ejemplo" width="640" height="640">
+            Su navegador no soporta el uso de Canvas.
+        </canvas>
+        <script language="JavaScript">
+            var example = document.getElementById('ejemplo');
+            var context = example.getContext('2d');
+            var i=1;
+            var text = "";
+            context.font = "25px serif"; 
+            context.fillText(text, 20, 50);
+            context.font = "15px serif";            
+            var imagen = new Image();
+	        imagen.src = '/home/al-08-09/yanaisa/triviteco/images/suelo32.png';
+
+            for (i=1;i<=16;i++)
+            {
+                
+                var j=1;
+                for (j=1;j<=16;j++)
+                {
+                    if (i<=8 && j <=8)                    
+                        context.fillStyle = "#79BEDB";                        
+                    else if (i<=8 && j>=8)
+                    
+                        context.fillStyle = "#99CC99";
+                    
+                    else if (i>=8 && j<=8)
+                    
+                        context.fillStyle = "#FFFF66";
+                        
+                    else
+                    
+                        context.fillStyle = "#FF3333";
+                  
+                    context.strokeRect(20+i*32, +j*32, 32, 32);
+		    context.fillRect(20+i*32, +j*32, 32, 32);
+                    context.drawImage(imagen,20+i*32, +j*32);
+	         
+                } 
+            } 
+        </script>
+    </body>
+</html>
