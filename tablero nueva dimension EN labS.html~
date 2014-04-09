@@ -14,7 +14,7 @@
             var i=1;
          
             var imagen = new Image();
-	        imagen.src = '/home/al-03-04/cherrero/ISI/TriviTeco/Triviteco/images/suelo2-40.png';
+	        imagen.src = '/home/al-03-04/cherrero/ISI/TriviTeco/Triviteco/images/suelo40.png';
             var jugadorRojo = new Image();
 		jugadorRojo.src = '/home/al-03-04/cherrero/ISI/TriviTeco/Triviteco/images/personajerojo40.png';		
 	    var jugadorAmarillo = new Image();
